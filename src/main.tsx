@@ -9,32 +9,65 @@ import {
 } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
-import Header from '@/components/Header'
+import RootLayout from '@/components/RootLayout'
 
 import * as TanStackQueryProvider from '@/lib/root-provider.tsx'
 
 import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
-import App from './App.tsx'
+
+// Page imports
+import HomePage from '@/routes/HomePage'
+import AboutPage from '@/routes/AboutPage'
+import ContactPage from '@/routes/ContactPage'
+import ProjectsPage from '@/routes/ProjectsPage'
+import ProjectDetailsPage from '@/routes/ProjectDetailsPage'
 
 const rootRoute = createRootRoute({
   component: () => (
-    <>
-      <Header />
+    <RootLayout>
       <Outlet />
       <TanStackRouterDevtools />
-    </>
+    </RootLayout>
   ),
 })
 
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
-  component: App,
+  component: HomePage,
+})
+
+const aboutRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/about',
+  component: AboutPage,
+})
+
+const contactRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/contact',
+  component: ContactPage,
+})
+
+const projectsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/projects',
+  component: ProjectsPage,
+})
+
+const projectDetailsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/projects/$slug',
+  component: ProjectDetailsPage,
 })
 
 const routeTree = rootRoute.addChildren([
   indexRoute,
+  aboutRoute,
+  contactRoute,
+  projectsRoute,
+  projectDetailsRoute,
 ])
 
 const TanStackQueryProviderContext = TanStackQueryProvider.getContext()

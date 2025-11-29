@@ -10,24 +10,8 @@ function App() {
           alt="logo"
         />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Ethan Blumenthal's Portfolio
         </p>
-        <a
-          className="text-[#61dafb] hover:underline"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="text-[#61dafb] hover:underline"
-          href="https://tanstack.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn TanStack
-        </a>
       </header>
     </div>
   )
