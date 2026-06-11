@@ -1,24 +1,24 @@
-import StatsCard from '@/components/StatsCard';
+import StatsCard from "@/components/StatsCard";
 
 interface ProjectMetadataProps {
-  year: string;
-  position: string;
-  tagline: string;
-  location: string;
+	year: string;
+	position: string;
+	tagline: string;
+	location: string;
 }
 
 export default function ProjectMetadata({
-  year,
-  position,
-  tagline,
-  location,
+	year,
+	position,
+	tagline,
+	location,
 }: ProjectMetadataProps) {
-  const stats = [
-    { value: year, label: 'Year' },
-    { value: position, label: 'Position' },
-    { value: tagline, label: 'Category' },
-    { value: location, label: 'Location' },
-  ];
+	const stats = [
+		{ value: year, label: "Year" },
+		{ value: position, label: "Position" },
+		{ value: tagline, label: "Category" },
+		{ value: location, label: "Location" },
+	];
 
-  return <StatsCard stats={stats} className="w-full" />;
+	return <StatsCard stats={stats} className="w-full" />;
 }
