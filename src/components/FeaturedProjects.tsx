@@ -13,7 +13,7 @@ export default function SelectedProjects() {
 							Featured Projects
 						</h2>
 						<p className="text-lg text-gray-400">
-							Commercial real estate technology solutions at scale
+							FinTech and PropTech solutions at scale
 						</p>
 					</div>
 				</div>

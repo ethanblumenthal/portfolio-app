@@ -22,14 +22,13 @@ export default function MainHero() {
 							</span>
 						</h1>
 						<h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-300 tracking-tight">
-							Full stack product engineer -
+							Product engineer -
 							<span className="text-white"> always shipping</span>
 						</h2>
 					</div>
 
 					<p className="text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed">
-						Driving Bitcoin adoption by building revolutionary FinTech and
-						PropTech products. 7 years of experience engineering with emerging
+						Driving Bitcoin adoption through innovative FinTech products. 7 years of engineering experience with emerging
 						technologies.
 					</p>
 				</div>
@@ -54,7 +53,7 @@ export default function MainHero() {
 					</div>
 					<div className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-dark-secondary border border-white/10">
 						<Bitcoin className="h-4 w-4 text-primary" />
-						<span className="text-sm text-gray-300 font-medium">Crypto</span>
+						<span className="text-sm text-gray-300 font-medium">Bitcoin</span>
 					</div>
 				</div>
 
