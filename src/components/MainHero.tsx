@@ -28,8 +28,8 @@ export default function MainHero() {
 					</div>
 
 					<p className="text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed">
-						Driving Bitcoin adoption through innovative FinTech products. 7 years of engineering experience with emerging
-						technologies.
+						Driving Bitcoin adoption through innovative FinTech products. 7
+						years of engineering experience with emerging technologies.
 					</p>
 				</div>
 

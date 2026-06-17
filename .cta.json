@@ -1,22 +1,22 @@
 {
-  "projectName": "portfolio-app",
-  "mode": "code-router",
-  "typescript": true,
-  "tailwind": true,
-  "packageManager": "bun",
-  "addOnOptions": {},
-  "git": true,
-  "version": 1,
-  "framework": "react-cra",
-  "chosenAddOns": [
-    "biome",
-    "compiler",
-    "form",
-    "module-federation",
-    "shadcn",
-    "t3env",
-    "table",
-    "store",
-    "tanstack-query"
-  ]
+	"projectName": "portfolio-app",
+	"mode": "code-router",
+	"typescript": true,
+	"tailwind": true,
+	"packageManager": "bun",
+	"addOnOptions": {},
+	"git": true,
+	"version": 1,
+	"framework": "react-cra",
+	"chosenAddOns": [
+		"biome",
+		"compiler",
+		"form",
+		"module-federation",
+		"shadcn",
+		"t3env",
+		"table",
+		"store",
+		"tanstack-query"
+	]
 }
