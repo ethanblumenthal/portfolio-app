@@ -1,0 +1,15 @@
+{
+    // Worker name — MUST match the existing Worker in Cloudflare
+    // (portfolio-app.ethan-blumenthal-693.workers.dev) so deploys update it
+    // instead of creating a duplicate.
+    "name": "portfolio-app",
+    "compatibility_date": "2025-06-01",
+    "assets": {
+      // Vite build output (vite build → dist; no outDir override).
+      "directory": "./dist",
+      // Serve index.html (200) for any path that isn't a real file, so
+      // hard-loads / refreshes of TanStack Router routes work instead of 404ing.
+      "not_found_handling": "single-page-application"
+    }
+  }
+  
